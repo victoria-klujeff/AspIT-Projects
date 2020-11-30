@@ -229,7 +229,7 @@ include "include/nav.php";
 ?>
 <main class="container mainNewUser ">
     <section class=" sectionMargin">
-        <h1>Create new user</h1>
+        <h1 class="mt-5">Create new user</h1>
         <article>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                    

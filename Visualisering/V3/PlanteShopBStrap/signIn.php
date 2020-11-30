@@ -101,7 +101,7 @@
     
     <section class="sectionMargin">
         <article>
-          <h1>Sign in</h1>
+          <h1 class="mt-5">Sign in</h1>
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                 <p class="form-group" >
                     <label for="userMail">Email: </label>
