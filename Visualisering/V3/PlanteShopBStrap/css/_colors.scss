@@ -1,0 +1,158 @@
+body{
+    background-color: hsl(90, 16%, 15%);
+    color: hsl(40,19%, 82%);
+}
+
+/* Index card*/
+.card{
+    border: none;
+    background-color: hsl(90, 16%, 15%);
+
+}
+header .card-img-overlay{
+    // background-color: hsla(11, 48%, 52%, 0.1);
+    background-color: hsla(39, 94%, 39%, 0.1);
+}
+section .card-img-overlay{
+    background-color: hsla(90, 16%, 15%, 0);
+    color: hsla(40,19%, 82%, 0);
+}
+
+section .card-img-overlay{
+    background-color: hsla(90, 16%, 15%, 0.4);
+    color: hsla(40,19%, 82%, 1);
+
+}
+section .shop{
+    color: hsla(40,19%, 82%, 0);
+    background-color: hsla(90, 16%, 15%, 0);
+
+}
+
+section .shop{
+    background-color: hsla(90, 16%, 15%, 0);
+}
+
+/*Shop*/
+
+.dropdown-menu{
+  background-color: hsl(40,19%, 82%);
+}
+
+/*Product page */
+.productPage{
+  .btn-link{
+    color: hsla(40,19%, 82%, 1);
+    font-weight: 700;
+    padding: 0;
+
+  }
+  .btn-link:hover{
+    color: hsla(40,19%, 82%, 1);
+    padding: 0;
+
+  }
+  .card{
+    float: right;
+    padding: 0;
+
+    .card-header{
+    padding: 0;
+    }
+  }
+  
+}
+
+/* Buttons*/
+.btn-primary {
+    color: hsl(40,19%, 82%);
+    background-color: hsla(39, 94%, 39%, 1);
+    border-color: hsla(39, 94%, 39%, 1);
+  }
+  
+  .btn-primary:hover {
+    color: hsl(40,19%, 82%);
+    background-color: hsla(39, 94%, 39%, 0.8);
+    border-color: hsla(39, 94%, 39%, 0.8);
+  }
+  .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem hsla(39, 94%, 39%, 1);
+     
+  }  
+
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: hsl(40,19%, 82%);
+    background-color: hsla(39, 94%, 39%, 1);
+    border: none;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: hsl(40,19%, 82%);
+    background-color: hsla(39, 94%, 39%, 1);
+    border: none;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem hsla(39, 94%, 39%, 1);
+  }
+
+  .btn-outline-primary {
+    color: hsla(39, 94%, 39%, 1);
+    border: none;
+  }
+  
+  .btn-outline-primary:hover {
+    color: hsl(40,19%, 82%);
+    background-color: hsla(39, 94%, 39%, 1);
+    border: none;
+  }
+  
+  .btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem hhsla(39, 94%, 39%, 1);
+  }
+  
+  .btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: hsla(39, 94%, 39%, 1);
+    background-color: transparent;
+  }
+  
+  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-primary.dropdown-toggle {
+    color: hsl(40,19%, 82%);
+    background-color: hsla(39, 94%, 39%, 1);
+    border:none;
+  }
+  
+  .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem hsla(39, 94%, 39%, 1);
+  }
+/* Navbar*/
+.bg-dark{
+    background-color: hsla(90, 16%, 15%, 0.9) !important;
+}
+
+div#navbarSupportedContent.navbar-collapse.collapse.show{
+    height: 100vh;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='hsl(40,19%, 82%)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+    color: hsla(40,19%, 82%, 0.9);
+
+  }
+  .navbar-light .navbar-nav .nav-link{
+    color: hsla(40,19%, 82%, 1);
+
+  }
+
+  
+@media only screen and (min-width: 800px) {
+  
+}

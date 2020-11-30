@@ -1,0 +1,72 @@
+.bg-dark{
+    background-color: hsl(153, 7%, 68%) !important;
+}
+div#navbarSupportedContent.navbar-collapse.collapse.show{
+    height: 100vh;
+}
+.btn-primary {
+    color: #fff;
+    background-color: hsla(153, 75%, 33%, 1);
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: hsla(153, 75%, 33%, 0.8);
+    border: none;
+  }
+
+  .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem hsla(153, 75%, 33%, 1);
+     
+  }  
+
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: hsla(153, 75%, 33%, 1);
+    border: none;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: hsla(153, 75%, 33%, 1);
+    border: none;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem hsla(153, 75%, 33%, 1);
+  }
+
+  .btn-outline-primary {
+    color: hsla(153, 75%, 33%, 1);
+    border: none;
+  }
+  
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: hsla(153, 75%, 33%, 1);
+    border: none;
+  }
+  
+  .btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem hsla(153, 75%, 33%, 0.5);
+  }
+  
+  .btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: hsla(153, 75%, 33%, 1);
+    background-color: transparent;
+  }
+  
+  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: hsla(153, 75%, 33%, 1);
+    border:none;
+  }
+  
+  .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem hsla(153, 75%, 33%, 0.5);
+  }

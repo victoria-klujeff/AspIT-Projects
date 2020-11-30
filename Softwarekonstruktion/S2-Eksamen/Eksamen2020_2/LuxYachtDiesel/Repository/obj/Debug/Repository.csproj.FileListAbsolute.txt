@@ -1,0 +1,14 @@
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\Repository\bin\Debug\Repository.dll
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\Repository\bin\Debug\Repository.pdb
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\Repository\obj\Debug\Repository.dll
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\Repository\obj\Debug\Repository.pdb
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\Repository\bin\Debug\Repository.dll
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\Repository\bin\Debug\Repository.pdb
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\Repository\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\Repository\bin\Debug\Newtonsoft.Json.xml
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\Repository\obj\Debug\Repository.dll
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\Repository\obj\Debug\Repository.pdb

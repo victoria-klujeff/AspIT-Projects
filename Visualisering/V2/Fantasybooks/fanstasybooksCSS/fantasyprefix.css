@@ -1,0 +1,304 @@
+
+*{
+    margin: 0;
+    padding: 0;}
+    
+    body{
+        overflow-x: hidden;
+        background-color: hsl(30, 46%, 95%);
+        min-height: 100%;
+    }
+    main{
+        padding-top: 2rem;  
+        max-width: 90vw;
+        margin: auto;      
+    }
+
+    /* Sider med meget lidt indhold */
+    #toptilister{
+        margin-bottom: 70vh;
+    }
+
+    /* Text styling */
+    a, p, h1, h2{
+        color: hsl(0, 46%, 8%);
+    }
+    main article p a{
+        text-decoration: underline;
+    }
+    /* Text color on footer and hnav*/
+    nav#menu ul li a, footer p{
+        color: hsl(30, 46%, 95%);
+    }
+    a, p{
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        line-height: 1.5rem;
+    }
+    nav ul li a, footer p, h1, h2{
+        font-family: 'Merriweather', serif;
+    }
+    h2, p{
+        margin: 1vh 0 1vh 0;
+    }
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 3vh;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    #BogListe p{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    }
+    #BogListe h2{
+        font-weight: 500;
+    }
+    #BogListe a:hover h2{
+        opacity: 0.7;
+    }
+    
+    /* Menu styling */
+    nav#menu{
+        /* display: block; */
+        transition-duration: 0.7s;
+        transform: translateX(100%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+    }
+    
+    /* Menuline på mobil og footer */
+    .navMobil, footer{
+        width: 100vw;
+        height: 4rem;
+        background-color: hsl(0, 46%, 8%);
+    }
+    /* When clicked and class show is added remove translate and show menu */
+    nav#menu.show{
+        transform: translate(0%);
+        background-color: hsla(0, 46%, 8%, 0.9);
+    }
+    nav#menu ul{
+        list-style-type: none;
+    }
+    nav#menu ul li{
+        margin-bottom: 1.3rem;
+    }
+    nav#menu ul li a{
+        font-size: 1.7rem;
+    }
+    nav ul li#Homeknap a{
+        color: hsl(168,47%, 27%);
+    }
+    .menuline1, .menuline2, .menuline3{
+        width: 40px;
+        height: 6px;
+        border-radius: 5px;
+        background-color: hsl(30, 46%, 95%);
+        position: absolute;
+        z-index: 3;
+        transform-origin: left center;
+        transform: all;
+        transition-duration: 0.3s;
+        cursor: pointer;  
+        right: 20px;
+    }
+
+    /* Menulinierne gives en top så de ikke ligger oven i hinanden */
+    .menuline1{
+        top: 17px;
+    }
+    .menuline2{
+        top: 30px;
+    }
+    .menuline3{
+        top: 43px;
+    }
+
+    /* Menulines når klassen close tilføjes */
+    .close .menuline1{
+        transform: rotate(45deg) scaleX(1.3);
+        top: 10px;
+    }
+    .close .menuline3{
+        transform: rotate(-45deg) scaleX(1.3);
+        top: 46px;
+    }
+    /* Anden menuline bliver fjernet bår klassen .submenu tilføjes */
+    .close .menuline2{
+        opacity: 0;
+        width: 0;
+    }
+    /* Footer */
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: absolute;
+        height: 13vh;
+    }
+    footer div img{
+        width: 2vw;
+    } 
+    div#footerBoxtre{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: inline-block;
+    }
+    div#footerBoxEt, div#footerBoxTo{
+        display: none;
+    }
+
+    /* Slideshow */
+    .slideshowContainer{
+        display: none;
+    }
+
+    /* Styling og placering af billeder på siden */
+    img{
+        max-width: 100%;
+    }
+
+
+    
+    @media only screen and (min-width: 800px){
+    
+    /* Content placement */
+    main{
+    padding-top: 10rem;        
+    }
+
+    /* Menu styling  */
+    /* Sørger for menuen vises da den i mobilversionen er default skjult med translate */
+     nav#menu{
+        background-color: hsl(0, 46%, 8%);
+        height: 0px;
+        width: 100%;
+        transform: translate(0%);
+    }
+    
+    /* For at kontrollere lementer i menuen bruges en flexbox */
+    nav#menu ul{
+        display: flex;
+        justify-content: left;
+    }
+    
+    /* List items styling*/
+    nav#menu ul li{
+         margin-right: 70px;
+    }
+    
+    nav#menu ul li.firstChoice{
+        padding-left: 70px;
+    } 
+    
+/* Dont show hamburger menu or arrow */
+    div#menu-icon{
+        display: none;
+    }
+    /* span.submenuarrow{
+        display: none;
+    } */
+
+    /* footer */
+    footer{
+        height: 15vh;
+        padding-bottom: 5rem;
+    }
+
+    div#footerBoxEt, div#footerBoxTo{
+        display: block;
+    }
+
+/* Slideshow */
+    .slideshowContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .slideshow img
+    {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        opacity: 0;
+        transition: all 2s;
+        transform: translateX(100%);
+        width: 100%;
+        z-index: 1;
+    }
+    .slideshow .currentimg
+    {
+       transform: translateX(0);
+        opacity: 1;
+    }
+    .slideshow .previousimg
+    {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    #dots
+    {
+        position: relative;
+        z-index: 4;  
+        margin-top: 40%; 
+    }
+    .dot
+    {
+    background-color:  hsla(349, 47%, 8%, 0.7);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    display: inline-block;
+    position: relative;
+    z-index: -1;
+    }
+    /* Farve på den dot hvis billede vises */
+    #dots .active
+    {
+        background-color: hsl(349, 47%, 8%);
+    }
+    
+     /* .slideshowarrow{
+    position: relative;
+    z-index: 10;
+    background-color:  hsl(349, 47%, 27%);
+    width: 2.5rem;
+    height: 2.5rem;  
+    margin-top: 20%;   
+    cursor: pointer;
+    }
+    
+    .leftarrow{
+        left: -43%;
+        clip-path: polygon(100% 0%, 50% 50%, 100% 100%, 50% 100%, 0% 50%, 50% 0);
+    
+    }
+    
+    .rightarrow{
+        right: -43%;
+        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 50% 50%, 0 0);
+    } */
+
+    /* Billede på mobilforside skal ikke vises på desktopversionen */
+    .mobilecover{
+        display: none;
+    }
+    
+/* Animation */
+/*Bounce animation on "Main"*/
+.animation:hover{
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+    
+    
+    
+}

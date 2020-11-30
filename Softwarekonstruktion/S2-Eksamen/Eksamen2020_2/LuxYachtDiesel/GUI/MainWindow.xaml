@@ -1,0 +1,35 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Icon="pack://application:,,,/Image/Logo.jpg"
+        Title="Luxury Yacht Diesel" Height="550" Width="850"
+        ResizeMode="NoResize">
+    <Grid x:Name="MainGrid">
+        <TabControl Margin="1">
+            <TabItem Header=" Salg af DIESEL"
+                     IsEnabled="{Binding tabItems}"
+                     IsSelected="False">
+                <Grid x:Name="SalesGrid" Background="White" />
+            </TabItem>
+            <TabItem Header="Kunde"
+                     IsEnabled="{Binding tabItems}">
+                <Grid x:Name="CustomerGrid" Background="White" />
+            </TabItem>
+            <TabItem Header="Leverandør"
+                     IsEnabled="{Binding tabItems}">
+                <Grid x:Name="SupplierGrid" Background="White" />
+            </TabItem>
+            <TabItem Name="dagsPris" 
+                     Header="Dagspris"
+                     IsEnabled="True"
+                     IsSelected="{Binding tabPrice}">
+                <Grid x:Name="DailyPriceGrid" Background="White" />
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

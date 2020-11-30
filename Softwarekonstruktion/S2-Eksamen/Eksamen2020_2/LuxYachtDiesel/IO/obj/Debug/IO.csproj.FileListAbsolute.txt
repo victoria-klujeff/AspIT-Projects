@@ -1,0 +1,17 @@
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\IO\bin\Debug\IO.dll
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\IO\bin\Debug\IO.pdb
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\IO\obj\Debug\IO.csprojAssemblyReference.cache
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\IO\obj\Debug\IO.csproj.CoreCompileInputs.cache
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\IO\obj\Debug\IO.dll
+C:\CodeMappe\S2\Eksamen\Eksamen2020_2\LuxYachtGasolin\IO\obj\Debug\IO.pdb
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\bin\Debug\IO.dll
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\bin\Debug\IO.pdb
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\bin\Debug\Repository.dll
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\bin\Debug\Repository.pdb
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\obj\Debug\IO.csprojAssemblyReference.cache
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\obj\Debug\IO.csproj.CoreCompileInputs.cache
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\obj\Debug\IO.csproj.CopyComplete
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\obj\Debug\IO.dll
+C:\Users\vict4454\Desktop\Softwareprogrammering\S2\CODE\Softwarekonstruktion\S2-Eksamen2020_2\Eksamen2020_2\LuxYachtDiesel\IO\obj\Debug\IO.pdb

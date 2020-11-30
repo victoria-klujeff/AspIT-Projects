@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>3</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>174</x>
+      <y>0</y>
+      <w>774</w>
+      <h>654</h>
+    </coordinates>
+    <panel_attributes>LuxYachtDiesel
+--
+layer=1
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>201</x>
+      <y>21</y>
+      <w>99</w>
+      <h>372</h>
+    </coordinates>
+    <panel_attributes>GUI
+--
+layer=2
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>408</x>
+      <y>21</y>
+      <w>189</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>BIZ
+--
+layer=2
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>732</x>
+      <y>21</y>
+      <w>189</w>
+      <h>309</h>
+    </coordinates>
+    <panel_attributes>IO
+--
+layer=2
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>330</x>
+      <y>375</y>
+      <w>594</w>
+      <h>267</h>
+    </coordinates>
+    <panel_attributes>Repository
+--
+layer=2
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>33</y>
+      <w>69</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>*MainForm*
+--
+-ClassBIZ biz
+-UserControlCustomer UCC
+-UserControlDailyPrice UCDP
+-UserControlDiesel UCD
+-UserControlSupplier UCS
+--
++MainWindow()
+--
+Responsibilities
+-- Holder den TabControl der skal
+gøre det muligt at navigere mellem
+de forskellige UserControls.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>174</y>
+      <w>78</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*UserControlCustomer*
+--
+-ClassBIZ biz
+--
++UserControlCustomer(ClassBIZ inBiz)
+--
+Responsibilities
+-- Denne userControl skal holde
+alle de elementer der gør det
+muligt at oprette og redigere data
+der knytter sig til en kunde, samt
+de eventhandlere der knytter
+sig til elementer på brugergrænsefladen.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>105</y>
+      <w>78</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*UserControlDiesel*
+--
+-ClassBIZ biz
+--
++UserControlDiesel(ClassBIZ inBiz)
+--
+Responsibilities
+-- Denne userControl skal holde
+alle de elementer der gør det
+muligt at gennemfører et salg
+af dieselolie, samt de 
+eventhandlere der knytter
+sig til elementer på brugergrænsefladen.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>246</y>
+      <w>78</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*UserControlSupplier*
+--
+-ClassBIZ biz
+--
++UserControlSupplier(ClassBIZ inBiz)
+--
+Responsibilities
+-- Denne userControl skal holde
+alle de elementer der gør det
+muligt at oprette og redigere data
+der knytter sig til en leverandør,
+samt de eventhandlere der knytter
+sig til elementer på brugergrænsefladen.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>315</y>
+      <w>78</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*UserControlDailyPrice*
+--
+-ClassBIZ biz
+--
++UserControlDailyPrice(ClassBIZ inBiz)
+--
+Responsibilities
+-- Denne userControl skal holde
+alle de elementer der gør det
+muligt at angive dagens pris på
+dieselolie og en liste med de
+foregående dages priser,samt de 
+eventhandlere der knytter sig 
+til elementer på brugergrænsefladen.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>357</x>
+      <y>408</y>
+      <w>114</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>*ClassNotify*
+--
++ event PropertyChangedEventHandler PropertyChanged
+--
+# Notify(string propertyName) void
+--
+Responsibilities
+-- I metoden Notify benyttes denne event til at afgøre om 
+   der er sket ændringer i den class som 
+   nedarver ClassNotify.
+   Hvis der er sket ændringer benyttes instansen 
+   PropertyChanged til at igangsætte en overførelse af data 
+   fra et givent Property til GUI hvor der er oprettet en 
+   Binding med et id(navnet på Property) der modsvarer 
+   navnet på det Property der er 
+   blevet opdateret med en ny værdi. 
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>390</y>
+      <w>54</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-()
+m2=INotifyPropertyChanged
+layer=3
+</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>699</x>
+      <y>408</y>
+      <w>93</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*ClassCurrency*
+--
+-_disclaimer: string
+-_license: string
+-_timestamp: long
+-_Base: string
+-_rates: Dictionary&lt;string, decimal&gt;
+
+&lt;&lt;property&gt;&gt; +Base: string
+&lt;&lt;property&gt;&gt; +license: string
+&lt;&lt;property&gt;&gt; +disclaimer: string
+&lt;&lt;property&gt;&gt; +timestamp: long
+&lt;&lt;property&gt;&gt; +rates: Dictionary&lt;string, decimal&gt;
+--
++ ClassCurrency()
+--
+Responsibilities
+-- Denne class skal holde svaret fra kaldet til
+   openexchangerates.org Web API.
+   Rates er et Dictionary der holder alle nøgler 
+   og kurser i forhold til USD.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>804</x>
+      <y>408</y>
+      <w>93</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*ClassCountry*
+--
+-_Id: int
+-_country: string
+-_countryCode: string
+-_currency: string
+-_currencyCode: string
+
+
+&lt;&lt;property&gt;&gt; +Id: string
+&lt;&lt;property&gt;&gt; +country: string
+&lt;&lt;property&gt;&gt; +countryCode: string
+&lt;&lt;property&gt;&gt; +currency: string
+&lt;&lt;property&gt;&gt; +currencyCode: string
+--
++ ClassCountry()
+--
+Responsibilities
+-- Denne class skal holde de data der knytter
+   sig til de enkelte lande, med både landenavn
+   og valuta.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>495</x>
+      <y>408</y>
+      <w>93</w>
+      <h>123</h>
+    </coordinates>
+    <panel_attributes>*ClassCustomer*
+--
+-_Id: int
+-_name: string
+-_address: string
+-_city: string
+-_postalCode: string
+-_country: ClassCountry
+-_phone: string
+-_mailAdr: string
+
+&lt;&lt;property&gt;&gt; +Id: int
+&lt;&lt;property&gt;&gt; +name: string
+&lt;&lt;property&gt;&gt; +address: string
+&lt;&lt;property&gt;&gt; +city: string
+&lt;&lt;property&gt;&gt; +postalCode: string
+&lt;&lt;property&gt;&gt; +country: ClassCountry
+&lt;&lt;property&gt;&gt; +phone: string
+&lt;&lt;property&gt;&gt; +mailAdr: string
+
+--
++ ClassCustomer()
++ ClassCustomer(ClassCustomer)
+--
+Responsibilities
+-- Denne class skal holde de data der knytter
+   sig til en kunde.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>597</x>
+      <y>408</y>
+      <w>93</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>*ClassSupplier*
+--
+-_Id: int
+-_firmName: string
+-_contactName: string
+-_address: string
+-_city: string
+-_postalCode: string
+-_country: ClassCountry
+-_phone: string
+-_mailAdr: string
+
+&lt;&lt;property&gt;&gt; +Id: int
+&lt;&lt;property&gt;&gt; +firmName: string
+&lt;&lt;property&gt;&gt; +contactName: string
+&lt;&lt;property&gt;&gt; +address: string
+&lt;&lt;property&gt;&gt; +city: string
+&lt;&lt;property&gt;&gt; +postalCode: string
+&lt;&lt;property&gt;&gt; +country: ClassCountry
+&lt;&lt;property&gt;&gt; +phone: string
+&lt;&lt;property&gt;&gt; +mailAdr: string
+
+--
++ ClassSupplier()
++ ClassSupplier(ClassSupplier)
+--
+Responsibilities
+-- Denne class skal holde de data der knytter
+   sig til en leverandør.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>363</x>
+      <y>519</y>
+      <w>93</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>*ClassDieselPrice*
+--
+-_Id: int
+-_date: DateTime
+-_price: double
+
+&lt;&lt;property&gt;&gt; +Id: int
+&lt;&lt;property&gt;&gt; +date: DateTime
+&lt;&lt;property&gt;&gt; +price: double
+
+--
++ ClassSupplier()
+--
+Responsibilities
+-- Denne class skal holde de data der knytter
+   sig til dagsprisen på diesel.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>42</y>
+      <w>114</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>*ClassCallWebAPI*
+--
+
+--
++ ClassCallWebAPI()
++ async GetURLContentsAsync(): Task&lt;ClassCurrency&gt;
+--
+Responsibilities
+-- Skaber forbindelsen til en Web API, sender en forespørgelse,
+   serialisere svaret via Newtonsoft.Jason til ClassCurrency
+   som den så returnere.
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>108</y>
+      <w>141</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>*ClassDbCon*
+--
+-connectionString: string
+#con: SqlConnection
+#command: SqlCommand
+--
++ ClassDbCon()
++ ClassDbCon(string inConnectionString)
+# SetConnection(string inCon): void
+# OpenDB(): void
+# CloseDB(): void
+# MakeCallToStoredProcedure(SqlCommand inCommand): DataTable
+--
+Responsibilities
+-- Skal håndtere alle former for kommunikation med databasen
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>204</y>
+      <w>141</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>*ClassLuxYachtDieselDB*
+--
+- static sqlConStr: string
+--
++ ClassLuxYachtDieselDB()
+
++ GetAllCustomersFromDB(): List&lt;ClassCustomer&gt;
++ SaveCustomerInDB(ClassCustomer) : void
++ UpdateCustomerInDB(ClassCustomer) : void
+
++ GetAllSuppliersFromDB(): List&lt;ClassSupplier&gt;
++ SaveSupplierInDB(ClassCustomer) : void
++ UpdateSupplierInDB(ClassCustomer) : void
+
++ SaveOrderToDB(ClassOrder inOrder): void
+
++ GetOilPriceFromDB(): ClassDieselPrice
++ GetAllOilPriceFromDB(): List&lt;ClassDieselPrice&gt;
+
+--
+Responsibilities
+-- Denne class skal holde de metoder der skal generere de SqlCommand
+   der skal benyttes til at kommunikere med databasen.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>702</x>
+      <y>513</y>
+      <w>93</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>*ClassOrder*
+--
+-_date: DateTime
+-_price: double
+-_customerRate: duble
+-_supplierRate: duble
+-_ownProfit: duble
+-_volume: int
+-_customer: ClassCustomer
+-_supplier: ClassSupplier
+
+&lt;&lt;property&gt;&gt; +date: DateTime
+&lt;&lt;property&gt;&gt; +price: double
+&lt;&lt;property&gt;&gt; +customerRate: duble
+&lt;&lt;property&gt;&gt; +supplierRate: duble
+&lt;&lt;property&gt;&gt; +ownProfit: duble
+&lt;&lt;property&gt;&gt; +volume: int
+&lt;&lt;property&gt;&gt; +customer: ClassCustomer
+&lt;&lt;property&gt;&gt; +supplier: ClassSupplier
+
+--
++ ClassOrder()
+--
+Responsibilities
+-- Denne class skal holde de data der knytter
+   sig til en order.
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>39</y>
+      <w>132</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>*ClassBIZ*
+--
+-classCallWebAPI: ClassCallWebAPI
+-classLuxYachtDieselDB: ClassLuxYachtDieselDB
+-currency: ClassCurrency
+-selectedCustomer: ClassCustomer
+-selectedSupplier: ClassSupplier
+-falbackCustomer: ClassCustomer
+-falbackSupplier: ClassSupplier
+-country: ClassCountry
+-listCustomers: List&lt;ClassCustomer&gt;
+-listSuppliers: List&lt;ClassSupplier&gt;
+-dieselPrice: ClassDieselPrice
+-order: ClassOrder
+
+&lt;&lt;property&gt;&gt; +classCallWebAPI: ClassCallWebAPI
+&lt;&lt;property&gt;&gt; +classLuxYachtDieselDB: ClassLuxYachtDieselDB
+&lt;&lt;property&gt;&gt; +currency: ClassCurrency
+&lt;&lt;property&gt;&gt; +selectedCustomer: ClassCustomer
+&lt;&lt;property&gt;&gt; +selectedSupplier: ClassSupplier
+&lt;&lt;property&gt;&gt; +falbackCustomer: ClassCustomer
+&lt;&lt;property&gt;&gt; +falbackSupplier: ClassSupplier
+&lt;&lt;property&gt;&gt; +country: ClassCountry
+&lt;&lt;property&gt;&gt; +listCustomers: List&lt;ClassCustomer&gt;
+&lt;&lt;property&gt;&gt; +listSuppliers: List&lt;ClassSupplier&gt;
+&lt;&lt;property&gt;&gt; +dieselPrice: ClassDieselPrice
+&lt;&lt;property&gt;&gt; +order: ClassOrder
+--
++ClassBIZ()
+
++GetAllCountrysWebAPI(): ClassCountry
+
++GetAllCustomersForListFromDB(): List&lt;ClassCustomer&gt;
++GetAllSuppliersForListFromDB(): List&lt;ClassSupplier&gt;
++GetDieselPriceFromDB(): ClassDieselPrice
+
++UpdateOrInsertCustomerInDB(): void
++UpdateOrInsertSupplierInDB(): void
++InsertDieselPriceInDB(): void
++InsertOrderInDB(): void
++RegretUpdateOrNewCustomerForDB(): void
++RegretUpdateOrNewSupplierForDB(): void
++RegretNewDieselPriceForDB(): void
++RegretNewOrderForDB(): void
+
++CalculateAllValuesForOrder(): void
+--
+Responsibilities
+-- Denne class holder alle property som GUI laver Binding til.
+   I denne class forefindes den del af koden som betegnes som
+   forretningslogikken eller funktionslogikken.
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>297</x>
+      <y>96</y>
+      <w>117</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>370.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>99</y>
+      <w>144</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>460.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>297</x>
+      <y>102</y>
+      <w>78</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>240.0;910.0;240.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>375</x>
+      <y>105</y>
+      <w>39</w>
+      <h>276</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>10.0;900.0;10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>357</x>
+      <y>108</y>
+      <w>381</w>
+      <h>273</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>10.0;890.0;10.0;790.0;1160.0;790.0;1160.0;10.0;1250.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>402</x>
+      <y>477</y>
+      <w>9</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>459</x>
+      <y>396</y>
+      <w>78</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0;240.0;10.0;240.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>453</x>
+      <y>393</y>
+      <w>186</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0;600.0;10.0;600.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>447</x>
+      <y>390</y>
+      <w>300</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;980.0;10.0;980.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>387</y>
+      <w>411</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0;1350.0;10.0;1350.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>426</x>
+      <y>297</y>
+      <w>63</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=3</panel_attributes>
+    <additional_attributes>10.0;370.0;10.0;220.0;190.0;220.0;190.0;10.0</additional_attributes>
+  </element>
+</diagram>
