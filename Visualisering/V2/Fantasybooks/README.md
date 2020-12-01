@@ -19,3 +19,6 @@ The customer wanted an simplified shop. This was achieved by simply making a lis
 ![Screenshot_2020-11-30 Fantasybooks Ungdommbøger Brugte bøger Eventyr Bogklub Secondhandstore(2)](https://user-images.githubusercontent.com/61143804/100723476-1ab9fa80-33c2-11eb-9ee5-65e210abe991.png)
 ## Responsive
 The site is responsive and uses a classic hamburger menu when in mobile view. The hamburger menu is made by using javascript.
+
+![Screenshot_2020-12-01 Fantasybooks Ungdommbøger Brugte bøger Eventyr Bogklub Secondhandstore](https://user-images.githubusercontent.com/61143804/100724284-fe6a8d80-33c2-11eb-8ea9-cdfd11390c84.png)
+
