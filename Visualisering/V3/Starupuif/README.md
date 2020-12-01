@@ -20,6 +20,3 @@ All the events can be displayed individually to display all information and make
 
 ## Create event
 New events can be created only by users with a specific privilege.
-![Screenshot_2020-11-30 Starup UIF arrangementer - opret arrangement](https://user-images.githubusercontent.com/61143804/100725395-463de480-33c4-11eb-8473-ad162aec0ab5.png)
-
-
