@@ -14,8 +14,7 @@ This project was open as to what we wanted to make. This site is a webshop which
 
 
 ## Shop
-![Screenshot_2020-11-30 Weirdplantgirl Shop rare plants](https://user-images.githubusercontent.com/61143804/100726443-3f63a180-33c5-11eb-87c2-7839bd539fb6.png)
-
+![Screenshot_2020-12-01 Weirdplantgirl Shop rare plants](https://user-images.githubusercontent.com/61143804/100727501-a170d680-33c6-11eb-9c34-a89489892e98.png)
 ## Productpage
 ![Screenshot_2020-11-30 Weirdplantgirl Rare Plants Aroids Anthurium Philodendron Monstera Sansevieria](https://user-images.githubusercontent.com/61143804/100726478-47234600-33c5-11eb-9d07-a384b6fa3b4b.png)
 
